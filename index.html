@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Pokedex</title>
+    <link rel="icon" href="./img/icons8-pokeball-48.png" type="image/fav-icon"/>
+</head>
+<body>
+    <div class="mother container-fluid mh-auto h-auto align-items-center">
+        <main class="cnt col-11 col-md-8 col-xl-4 mx-auto d-flex flex-column justify-content-center">
+            <form class="d-flex flex-row justify-content-between" onsubmit="return false">
+                <div class="pokemon__form form-floating col-9 space-between">
+                    <input type="text" class="input__search form-control" id="idSearch" placeholder="Pokémon" required name="Pokémon ou ID">
+                    <label for="idSearch">Pokémon ou ID</label>
+                </div>
+            
+                <button class="col-2 btn__search btn btn-outline-light border-2" type="submit">
+                    <i class="fa-brands fa-searchengin"></i>
+                </button>
+            </form>
+
+            <ul class="mt-5 list-group">
+                <li class="pokemon__name list-group-item list-unstyled text-capitalize"></li>
+                <li class="pokemon__id list-group-item list-unstyled "></li>
+                <li class="pokemon__type list-group-item list-unstyled"></li>
+                <li class="pokemon__height list-group-item list-unstyled"></li>
+                <li class="pokemon__weight list-group-item list-unstyled"></li>
+                <li class="pokemon__ability list-group-item list-unstyled"></li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <img class="pokemon__image mt-3 img-fluid col-6 col-md-4 col-xl-3" src="#" alt="Pokémon">
+            </div>
+
+        </main>
+
+        <footer class="d-flex justify-content-end"><p>Desenvolvido por Giovana Hatten</p></footer>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

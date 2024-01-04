@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(128,174,114);
+}
+
+.mother {
+    background-image: url("../img/pokemonbg.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: auto;
+    min-height: 100%;
+    min-height: 100vh;
+    
+}
+
+.cnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
