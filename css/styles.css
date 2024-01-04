@@ -6,15 +6,13 @@ body {
     background-image: url("../img/pokemonbg.png");
     background-repeat: repeat-x;
     background-size: contain;
-    height: auto;
     min-height: 100%;
-    min-height: 100vh;
-    
+    min-height: 100svh;
 }
 
-.cnt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media screen and (max-width: 768px) {
+    .btn__search {
+        background-color: white;
+        color: black;
+    }
 }
